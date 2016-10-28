@@ -1,14 +1,27 @@
-package examples.java.package1;
+
 
 public class Addition {
-	private double x, y;
+	
+	
+	public static void main(String[] args) {
+		Calculate objCalculate=new Calculate(2, 3);
+		objCalculate.sum();
+	}
+	
+	
+}
 
-	public Addition(double a, double b) {
+class Calculate{
+	
+	private double x, y;
+	
+	public Calculate(double a, double b) {
 		x = a;
 		y = b;
 	}
-
+	
 	public void sum() {
 		System.out.println("sum=" + (x + y));
 	}
+	
 }
